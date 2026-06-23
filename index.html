@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio CV — Nama Kamu</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <!-- ✏️ GANTI: Inisial atau nama singkat kamu -->
+      <span>MAP</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#keahlian">Keahlian</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#pengalaman">Pengalaman</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <!-- Tombol dark/light mode -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle tema">
+      <span class="icon-sun">☀️</span>
+      <span class="icon-moon">🌙</span>
+    </button>
+    <button class="nav-burger" id="burger">☰</button>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="beranda">
+    <div class="hero-content">
+      <p class="hero-eyebrow">
+        <!-- ✏️ GANTI: Jabatan / peran kamu -->
+        UI/UX Designer & Frontend Developer
+      </p>
+      <h1 class="hero-name">
+        <!-- ✏️ GANTI: Nama lengkap kamu -->
+        MUHAMMAD<br>ALFIAN<br><em>PAMBUDI</em>
+      </h1>
+      <p class="hero-desc">
+        <!-- ✏️ GANTI: Tagline singkat tentang kamu -->
+        Saya merancang pengalaman digital yang bermakna, dari wireframe sampai produk jadi.
+      </p>
+      <div class="hero-cta">
+        <a href="#proyek" class="btn btn-primary">Lihat Proyek</a>
+        <a href="#kontak" class="btn btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="blob-wrap">
+        <!--
+          ✏️ GANTI FOTO:
+          1. Taruh file foto kamu di folder  assets/
+          2. Ubah  src="assets/foto.jpg"  menjadi nama file fotomu
+             Contoh: src="assets/andika.png"
+        -->
+        <img src="{css,js,assets}/WhatsApp Image 2026-06-18 at 21.09.30.jpeg" alt="Foto Profil" class="hero-photo" />
+        <div class="blob-bg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TENTANG
+  ============================================================ -->
+  <section class="section" id="tentang">
+    <div class="container">
+      <h2 class="section-title">Tentang <em>Saya</em></h2>
+      <div class="tentang-grid">
+        <div class="tentang-text">
+          <!-- ✏️ GANTI: Paragraf tentang kamu -->
+          <p>
+            Halo! Saya MUHAMMAD ALFIAN PAMBUDI, seorang desainer dan developer berbasis di Jakarta dengan pengalaman lebih dari 4 tahun membangun produk digital yang intuitif dan estetis.
+          </p>
+          <p>
+            Saya percaya bahwa desain yang baik bukan hanya soal tampilan, tapi soal bagaimana pengguna merasakan perjalanan mereka di dalam produk.
+          </p>
+        </div>
+        <div class="tentang-stats">
+          <!-- ✏️ GANTI: Angka-angka pencapaian kamu -->
+          <div class="stat-card">
+            <span class="stat-num">1</span>
+            <span class="stat-label">Tahun Pengalaman</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Proyek Selesai</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">1</span>
+            <span class="stat-label">Klien Puas</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">5★</span>
+            <span class="stat-label">Rating Rata-rata</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       KEAHLIAN
+  ============================================================ -->
+  <section class="section section-alt" id="keahlian">
+    <div class="container">
+      <h2 class="section-title">Keahlian <em>Saya</em></h2>
+      <div class="skill-grid">
+
+        <!-- ✏️ GANTI: Tambah / hapus / ubah kartu keahlian sesuai kebutuhan -->
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>Figma, Adobe XD, Prototyping, User Research</p>
+          <div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>Frontend Dev</h3>
+          <p>HTML, CSS, JavaScript, React, Vue</p>
+          <div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Backend Dasar</h3>
+          <p>Node.js, Express, REST API, MySQL</p>
+          <div class="skill-bar"><div class="skill-fill" data-pct="65"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">📱</div>
+          <h3>Mobile Design</h3>
+          <p>Responsive Design, Flutter UI, Mobile First</p>
+          <div class="skill-bar"><div class="skill-fill" data-pct="75"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🔍</div>
+          <h3>SEO & Performa</h3>
+          <p>Core Web Vitals, Lighthouse, GTM, Analytics</p>
+          <div class="skill-bar"><div class="skill-fill" data-pct="70"></div></div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🤝</div>
+          <h3>Soft Skills</h3>
+          <p>Komunikasi, Kolaborasi, Problem Solving</p>
+          <div class="skill-bar"><div class="skill-fill" data-pct="95"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROYEK
+  ============================================================ -->
+  <section class="section" id="proyek">
+    <div class="container">
+      <h2 class="section-title">Proyek <em>Pilihan</em></h2>
+      <div class="proyek-grid">
+
+        <!-- ✏️ GANTI: Isi setiap kartu proyek sesuai proyekmu -->
+        <!-- Kartu Proyek 1 -->
+        <div class="proyek-card">
+          <div class="proyek-img" style="background: linear-gradient(135deg, #6C63FF, #3ECFCF);">
+            <!-- ✏️ OPSIONAL: Ganti dengan <img src="assets/proyek1.jpg"> -->
+            <span class="proyek-emoji">🛒</span>
+          </div>
+          <div class="proyek-info">
+            <span class="proyek-tag">E-Commerce</span>
+            <h3>Toko Online Batik</h3>
+            <p>Redesain platform jual-beli batik lokal dengan peningkatan konversi 40%.</p>
+            <div class="proyek-links">
+              <a href="#" class="btn-sm">Demo</a>
+              <a href="#" class="btn-sm btn-ghost">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kartu Proyek 2 -->
+        <div class="proyek-card">
+          <div class="proyek-img" style="background: linear-gradient(135deg, #FF6B6B, #FFD93D);">
+            <span class="proyek-emoji">📊</span>
+          </div>
+          <div class="proyek-info">
+            <span class="proyek-tag">Dashboard</span>
+            <h3>Admin Analytics</h3>
+            <p>Dashboard real-time untuk memantau performa toko dengan visualisasi data interaktif.</p>
+            <div class="proyek-links">
+              <a href="#" class="btn-sm">Demo</a>
+              <a href="#" class="btn-sm btn-ghost">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kartu Proyek 3 -->
+        <div class="proyek-card">
+          <div class="proyek-img" style="background: linear-gradient(135deg, #43E97B, #38F9D7);">
+            <span class="proyek-emoji">📱</span>
+          </div>
+          <div class="proyek-info">
+            <span class="proyek-tag">Mobile App</span>
+            <h3>Aplikasi Kesehatan</h3>
+            <p>UI kit dan desain sistem untuk aplikasi kesehatan harian berbasis Flutter.</p>
+            <div class="proyek-links">
+              <a href="#" class="btn-sm">Demo</a>
+              <a href="#" class="btn-sm btn-ghost">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PENGALAMAN
+  ============================================================ -->
+  <section class="section section-alt" id="pengalaman">
+    <div class="container">
+      <h2 class="section-title">Pengalaman & <em>Pendidikan</em></h2>
+      <div class="timeline">
+
+        <!-- ✏️ GANTI: Tambah / hapus timeline sesuai CV kamu -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-period">2020 — 2023</span>
+            <h3>Sekolah Menengah Atas</h3>
+            <p class="timeline-company">SMAN 1 Tangerang · Tangerang</p>
+            <p>Memimpin tim desain produk untuk 8+ klien startup dan enterprise, dari riset pengguna hingga handoff ke developer.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-period">2023 — 2026</span>
+            <h3>Frontend Developer</h3>
+            <p class="timeline-company">SKS · Tangerang </p>
+            <p>Membangun antarmuka web responsif menggunakan React dan Vue, bekerja sama dengan tim backend Node.js.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-period">2024 — 2028</span>
+            <h3>S1 Teknik Komputer</h3>
+            <p class="timeline-company">Universitas Pamulang</p>
+            <p>Lulus dengan predikat Cum Laude. Fokus pada desain interaksi dan tipografi digital.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       KONTAK
+  ============================================================ -->
+  <section class="section" id="kontak">
+    <div class="container">
+      <h2 class="section-title">Mari <em>Berkolaborasi</em></h2>
+      <div class="kontak-wrap">
+        <div class="kontak-info">
+          <!-- ✏️ GANTI: Info kontak kamu -->
+          <div class="kontak-item">
+            <span>📧</span>
+            <a href="mailto:muhalfianpambudi@email.com">muhalfianpambudi@email.com</a>
+          </div>
+          <div class="kontak-item">
+            <span>📍</span>
+            <span>Jakarta, Indonesia</span>
+          </div>
+          <div class="kontak-item">
+            <span>💼</span>
+            <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+          </div>
+          <div class="kontak-item">
+            <span>🐱</span>
+            <a href="https://github.com/username" target="_blank">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Form Kontak -->
+        <form class="kontak-form" id="kontakForm">
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" placeholder="Nama kamu" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email@kamu.com" required />
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" rows="4" placeholder="Halo, saya ingin berdiskusi tentang..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-full">Kirim Pesan 🚀</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <p>
+      <!-- ✏️ GANTI: Nama kamu -->
+      Dibuat dengan ❤️ oleh <strong>MUHAMMAD ALFIAN PAMBUDI</strong> · 2026
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
